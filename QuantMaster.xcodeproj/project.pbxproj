@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EA2A7DE2C8ACBF9001DC02D /* QuantOptionPlusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2A7DD2C8ACBF9001DC02D /* QuantOptionPlusView.swift */; };
+		2EA2A7E12C8ACF6C001DC02D /* QuantConditionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2A7E02C8ACF6C001DC02D /* QuantConditionListView.swift */; };
+		2EA2A7E42C8AD54F001DC02D /* QuantResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2A7E32C8AD54F001DC02D /* QuantResultView.swift */; };
+		2EA2A7E72C92934B001DC02D /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 2EA2A7E62C92934B001DC02D /* ComposableArchitecture */; };
+		2EA2A7E92C92938F001DC02D /* ConditionListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2A7E82C92938F001DC02D /* ConditionListFeature.swift */; };
+		2EA2A7EC2C9294F8001DC02D /* QuantCheckFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2A7EB2C9294F8001DC02D /* QuantCheckFeature.swift */; };
+		2EA2A7EF2C92C8D9001DC02D /* IndexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2A7EE2C92C8D9001DC02D /* IndexManager.swift */; };
+		2EA2A7F22C92CA02001DC02D /* QuantSelectFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2A7F12C92CA02001DC02D /* QuantSelectFeature.swift */; };
+		2EBCB1432C29016700D23F4F /* QuantMasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCB1422C29016700D23F4F /* QuantMasterApp.swift */; };
+		2EBCB1452C29016700D23F4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCB1442C29016700D23F4F /* ContentView.swift */; };
+		2EBCB1472C29016800D23F4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EBCB1462C29016800D23F4F /* Assets.xcassets */; };
+		2EBCB14B2C29016800D23F4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EBCB14A2C29016800D23F4F /* Preview Assets.xcassets */; };
+		2ECC24D52C86895000BB1607 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2ECC24D42C86895000BB1607 /* Alamofire */; };
+		2ECC24DF2C8691AB00BB1607 /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECC24DE2C8691AB00BB1607 /* BaseNetwork.swift */; };
+		2ECC24E12C86938300BB1607 /* BaseNetwork+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECC24E02C86938300BB1607 /* BaseNetwork+Error.swift */; };
+		2ECC24E32C86948100BB1607 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECC24E22C86948100BB1607 /* Constants.swift */; };
+		2ECC24E52C86984D00BB1607 /* BaseAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECC24E42C86984D00BB1607 /* BaseAuthenticator.swift */; };
+		2ECC24E82C86AD7A00BB1607 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECC24E72C86AD7A00BB1607 /* Log.swift */; };
+		2ECC24EB2C86ADA000BB1607 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECC24EA2C86ADA000BB1607 /* String+Extension.swift */; };
+		2ECC24ED2C86ADBA00BB1607 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECC24EC2C86ADBA00BB1607 /* Date+Extension.swift */; };
+		2ECC24EF2C86B0BF00BB1607 /* BaseRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECC24EE2C86B0BF00BB1607 /* BaseRequestConvertible.swift */; };
+		2ECC24F22C86DFBC00BB1607 /* QuantRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECC24F12C86DFBC00BB1607 /* QuantRequest.swift */; };
+		2ECC24F52C86E03A00BB1607 /* IndexType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECC24F42C86E03A00BB1607 /* IndexType.swift */; };
+		2ECC24F72C86E0EF00BB1607 /* OrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECC24F62C86E0EF00BB1607 /* OrderType.swift */; };
+		2ECC24F92C86E1DB00BB1607 /* ReportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECC24F82C86E1DB00BB1607 /* ReportType.swift */; };
+		2ECC24FB2C86E34700BB1607 /* MarketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECC24FA2C86E34700BB1607 /* MarketType.swift */; };
+		2ECC24FD2C86E39200BB1607 /* SectorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECC24FC2C86E39200BB1607 /* SectorType.swift */; };
+		2ECC24FF2C86E3C600BB1607 /* ValueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECC24FE2C86E3C600BB1607 /* ValueType.swift */; };
+		2ECC25012C86E3F300BB1607 /* CompareType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECC25002C86E3F300BB1607 /* CompareType.swift */; };
+		2ECC25032C86E66400BB1607 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECC25022C86E66400BB1607 /* Main.swift */; };
+		2ECC25062C87F03900BB1607 /* QuantIndexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECC25052C87F03900BB1607 /* QuantIndexModel.swift */; };
+		2ECC250E2C89706B00BB1607 /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECC250D2C89706B00BB1607 /* UIScreen+Extension.swift */; };
+		2ECC25162C8AAB3F00BB1607 /* Korean.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 2ECC25152C8AAB3F00BB1607 /* Korean.xcstrings */; };
+		2ECC25192C8ABDCD00BB1607 /* QuantSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECC25082C87F2E000BB1607 /* QuantSelectView.swift */; };
+		2ECC251A2C8ABDCD00BB1607 /* QuantCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECC25172C8ABD7600BB1607 /* QuantCheckView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2EA2A7DD2C8ACBF9001DC02D /* QuantOptionPlusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantOptionPlusView.swift; sourceTree = "<group>"; };
+		2EA2A7E02C8ACF6C001DC02D /* QuantConditionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantConditionListView.swift; sourceTree = "<group>"; };
+		2EA2A7E32C8AD54F001DC02D /* QuantResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantResultView.swift; sourceTree = "<group>"; };
+		2EA2A7E82C92938F001DC02D /* ConditionListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionListFeature.swift; sourceTree = "<group>"; };
+		2EA2A7EB2C9294F8001DC02D /* QuantCheckFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantCheckFeature.swift; sourceTree = "<group>"; };
+		2EA2A7EE2C92C8D9001DC02D /* IndexManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexManager.swift; sourceTree = "<group>"; };
+		2EA2A7F12C92CA02001DC02D /* QuantSelectFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantSelectFeature.swift; sourceTree = "<group>"; };
+		2EBCB13F2C29016700D23F4F /* QuantMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuantMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EBCB1422C29016700D23F4F /* QuantMasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantMasterApp.swift; sourceTree = "<group>"; };
+		2EBCB1442C29016700D23F4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2EBCB1462C29016800D23F4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EBCB1482C29016800D23F4F /* QuantMaster.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuantMaster.entitlements; sourceTree = "<group>"; };
+		2EBCB14A2C29016800D23F4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2ECC24DE2C8691AB00BB1607 /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
+		2ECC24E02C86938300BB1607 /* BaseNetwork+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseNetwork+Error.swift"; sourceTree = "<group>"; };
+		2ECC24E22C86948100BB1607 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2ECC24E42C86984D00BB1607 /* BaseAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAuthenticator.swift; sourceTree = "<group>"; };
+		2ECC24E72C86AD7A00BB1607 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		2ECC24EA2C86ADA000BB1607 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		2ECC24EC2C86ADBA00BB1607 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		2ECC24EE2C86B0BF00BB1607 /* BaseRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequestConvertible.swift; sourceTree = "<group>"; };
+		2ECC24F12C86DFBC00BB1607 /* QuantRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantRequest.swift; sourceTree = "<group>"; };
+		2ECC24F42C86E03A00BB1607 /* IndexType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexType.swift; sourceTree = "<group>"; };
+		2ECC24F62C86E0EF00BB1607 /* OrderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderType.swift; sourceTree = "<group>"; };
+		2ECC24F82C86E1DB00BB1607 /* ReportType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportType.swift; sourceTree = "<group>"; };
+		2ECC24FA2C86E34700BB1607 /* MarketType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketType.swift; sourceTree = "<group>"; };
+		2ECC24FC2C86E39200BB1607 /* SectorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectorType.swift; sourceTree = "<group>"; };
+		2ECC24FE2C86E3C600BB1607 /* ValueType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueType.swift; sourceTree = "<group>"; };
+		2ECC25002C86E3F300BB1607 /* CompareType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareType.swift; sourceTree = "<group>"; };
+		2ECC25022C86E66400BB1607 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		2ECC25052C87F03900BB1607 /* QuantIndexModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantIndexModel.swift; sourceTree = "<group>"; };
+		2ECC25082C87F2E000BB1607 /* QuantSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantSelectView.swift; sourceTree = "<group>"; };
+		2ECC250D2C89706B00BB1607 /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
+		2ECC25152C8AAB3F00BB1607 /* Korean.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Korean.xcstrings; sourceTree = "<group>"; };
+		2ECC25172C8ABD7600BB1607 /* QuantCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantCheckView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EBCB13C2C29016700D23F4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EA2A7E72C92934B001DC02D /* ComposableArchitecture in Frameworks */,
+				2ECC24D52C86895000BB1607 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2EA2A7DF2C8ACD70001DC02D /* ConditionList */ = {
+			isa = PBXGroup;
+			children = (
+				2EA2A7E02C8ACF6C001DC02D /* QuantConditionListView.swift */,
+				2EA2A7E82C92938F001DC02D /* ConditionListFeature.swift */,
+			);
+			path = ConditionList;
+			sourceTree = "<group>";
+		};
+		2EA2A7E22C8AD541001DC02D /* QuantResult */ = {
+			isa = PBXGroup;
+			children = (
+				2EA2A7E32C8AD54F001DC02D /* QuantResultView.swift */,
+			);
+			path = QuantResult;
+			sourceTree = "<group>";
+		};
+		2EA2A7EA2C9294E7001DC02D /* QuantCheck */ = {
+			isa = PBXGroup;
+			children = (
+				2ECC25172C8ABD7600BB1607 /* QuantCheckView.swift */,
+				2EA2A7EB2C9294F8001DC02D /* QuantCheckFeature.swift */,
+			);
+			path = QuantCheck;
+			sourceTree = "<group>";
+		};
+		2EA2A7ED2C92C8CD001DC02D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2EA2A7EE2C92C8D9001DC02D /* IndexManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		2EA2A7F02C92C9EC001DC02D /* QuantSelect */ = {
+			isa = PBXGroup;
+			children = (
+				2ECC25082C87F2E000BB1607 /* QuantSelectView.swift */,
+				2EA2A7F12C92CA02001DC02D /* QuantSelectFeature.swift */,
+			);
+			path = QuantSelect;
+			sourceTree = "<group>";
+		};
+		2EBCB1362C29016700D23F4F = {
+			isa = PBXGroup;
+			children = (
+				2EBCB1412C29016700D23F4F /* QuantMaster */,
+				2EBCB1402C29016700D23F4F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2EBCB1402C29016700D23F4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EBCB13F2C29016700D23F4F /* QuantMaster.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EBCB1412C29016700D23F4F /* QuantMaster */ = {
+			isa = PBXGroup;
+			children = (
+				2ECC25142C8AAB2B00BB1607 /* Language */,
+				2ECC24F02C86DF7D00BB1607 /* Models */,
+				2EBCB1522C29018000D23F4F /* Common */,
+				2ECC25072C87F2BE00BB1607 /* Views */,
+				2EBCB1512C29017900D23F4F /* Pages */,
+				2EBCB1422C29016700D23F4F /* QuantMasterApp.swift */,
+				2EBCB1442C29016700D23F4F /* ContentView.swift */,
+				2EBCB1462C29016800D23F4F /* Assets.xcassets */,
+				2EBCB1482C29016800D23F4F /* QuantMaster.entitlements */,
+				2EBCB1492C29016800D23F4F /* Preview Content */,
+			);
+			path = QuantMaster;
+			sourceTree = "<group>";
+		};
+		2EBCB1492C29016800D23F4F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2EBCB14A2C29016800D23F4F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2EBCB1512C29017900D23F4F /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				2EA2A7E22C8AD541001DC02D /* QuantResult */,
+				2EA2A7DF2C8ACD70001DC02D /* ConditionList */,
+				2ECC25042C87F01A00BB1607 /* Main */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		2EBCB1522C29018000D23F4F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2EA2A7ED2C92C8CD001DC02D /* Manager */,
+				2ECC24E92C86AD9400BB1607 /* Extension */,
+				2ECC24E62C86AD6F00BB1607 /* Log */,
+				2EBCB1532C29018600D23F4F /* Network */,
+				2ECC24E22C86948100BB1607 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2EBCB1532C29018600D23F4F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2ECC24DE2C8691AB00BB1607 /* BaseNetwork.swift */,
+				2ECC24E02C86938300BB1607 /* BaseNetwork+Error.swift */,
+				2ECC24E42C86984D00BB1607 /* BaseAuthenticator.swift */,
+				2ECC24EE2C86B0BF00BB1607 /* BaseRequestConvertible.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2ECC24E62C86AD6F00BB1607 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				2ECC24E72C86AD7A00BB1607 /* Log.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		2ECC24E92C86AD9400BB1607 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2ECC250F2C898F0300BB1607 /* SwiftUI */,
+				2ECC24EA2C86ADA000BB1607 /* String+Extension.swift */,
+				2ECC24EC2C86ADBA00BB1607 /* Date+Extension.swift */,
+				2ECC250D2C89706B00BB1607 /* UIScreen+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2ECC24F02C86DF7D00BB1607 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2ECC24F32C86E02A00BB1607 /* Enums */,
+				2ECC24F12C86DFBC00BB1607 /* QuantRequest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2ECC24F32C86E02A00BB1607 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				2ECC24F42C86E03A00BB1607 /* IndexType.swift */,
+				2ECC24F62C86E0EF00BB1607 /* OrderType.swift */,
+				2ECC24F82C86E1DB00BB1607 /* ReportType.swift */,
+				2ECC24FA2C86E34700BB1607 /* MarketType.swift */,
+				2ECC24FC2C86E39200BB1607 /* SectorType.swift */,
+				2ECC24FE2C86E3C600BB1607 /* ValueType.swift */,
+				2ECC25002C86E3F300BB1607 /* CompareType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		2ECC25042C87F01A00BB1607 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2ECC25022C86E66400BB1607 /* Main.swift */,
+				2ECC25052C87F03900BB1607 /* QuantIndexModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2ECC25072C87F2BE00BB1607 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2EA2A7F02C92C9EC001DC02D /* QuantSelect */,
+				2EA2A7EA2C9294E7001DC02D /* QuantCheck */,
+				2EA2A7DD2C8ACBF9001DC02D /* QuantOptionPlusView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2ECC250F2C898F0300BB1607 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		2ECC25142C8AAB2B00BB1607 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				2ECC25152C8AAB3F00BB1607 /* Korean.xcstrings */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2EBCB13E2C29016700D23F4F /* QuantMaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EBCB14E2C29016800D23F4F /* Build configuration list for PBXNativeTarget "QuantMaster" */;
+			buildPhases = (
+				2EBCB13B2C29016700D23F4F /* Sources */,
+				2EBCB13C2C29016700D23F4F /* Frameworks */,
+				2EBCB13D2C29016700D23F4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuantMaster;
+			packageProductDependencies = (
+				2ECC24D42C86895000BB1607 /* Alamofire */,
+				2EA2A7E62C92934B001DC02D /* ComposableArchitecture */,
+			);
+			productName = QuantMaster;
+			productReference = 2EBCB13F2C29016700D23F4F /* QuantMaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EBCB1372C29016700D23F4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					2EBCB13E2C29016700D23F4F = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 2EBCB13A2C29016700D23F4F /* Build configuration list for PBXProject "QuantMaster" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ko,
+			);
+			mainGroup = 2EBCB1362C29016700D23F4F;
+			packageReferences = (
+				2ECC24D32C86895000BB1607 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				2EA2A7E52C92934B001DC02D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
+			productRefGroup = 2EBCB1402C29016700D23F4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EBCB13E2C29016700D23F4F /* QuantMaster */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EBCB13D2C29016700D23F4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EBCB14B2C29016800D23F4F /* Preview Assets.xcassets in Resources */,
+				2ECC25162C8AAB3F00BB1607 /* Korean.xcstrings in Resources */,
+				2EBCB1472C29016800D23F4F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EBCB13B2C29016700D23F4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ECC25192C8ABDCD00BB1607 /* QuantSelectView.swift in Sources */,
+				2ECC251A2C8ABDCD00BB1607 /* QuantCheckView.swift in Sources */,
+				2ECC24EB2C86ADA000BB1607 /* String+Extension.swift in Sources */,
+				2EA2A7E12C8ACF6C001DC02D /* QuantConditionListView.swift in Sources */,
+				2ECC24E52C86984D00BB1607 /* BaseAuthenticator.swift in Sources */,
+				2EA2A7EC2C9294F8001DC02D /* QuantCheckFeature.swift in Sources */,
+				2ECC24EF2C86B0BF00BB1607 /* BaseRequestConvertible.swift in Sources */,
+				2EA2A7DE2C8ACBF9001DC02D /* QuantOptionPlusView.swift in Sources */,
+				2ECC24E82C86AD7A00BB1607 /* Log.swift in Sources */,
+				2ECC24FB2C86E34700BB1607 /* MarketType.swift in Sources */,
+				2EA2A7E42C8AD54F001DC02D /* QuantResultView.swift in Sources */,
+				2ECC24F72C86E0EF00BB1607 /* OrderType.swift in Sources */,
+				2ECC24E32C86948100BB1607 /* Constants.swift in Sources */,
+				2ECC24F52C86E03A00BB1607 /* IndexType.swift in Sources */,
+				2ECC24E12C86938300BB1607 /* BaseNetwork+Error.swift in Sources */,
+				2ECC24DF2C8691AB00BB1607 /* BaseNetwork.swift in Sources */,
+				2ECC24FF2C86E3C600BB1607 /* ValueType.swift in Sources */,
+				2ECC25012C86E3F300BB1607 /* CompareType.swift in Sources */,
+				2ECC25032C86E66400BB1607 /* Main.swift in Sources */,
+				2EBCB1452C29016700D23F4F /* ContentView.swift in Sources */,
+				2EBCB1432C29016700D23F4F /* QuantMasterApp.swift in Sources */,
+				2EA2A7E92C92938F001DC02D /* ConditionListFeature.swift in Sources */,
+				2ECC24ED2C86ADBA00BB1607 /* Date+Extension.swift in Sources */,
+				2ECC24FD2C86E39200BB1607 /* SectorType.swift in Sources */,
+				2ECC24F22C86DFBC00BB1607 /* QuantRequest.swift in Sources */,
+				2ECC250E2C89706B00BB1607 /* UIScreen+Extension.swift in Sources */,
+				2ECC25062C87F03900BB1607 /* QuantIndexModel.swift in Sources */,
+				2ECC24F92C86E1DB00BB1607 /* ReportType.swift in Sources */,
+				2EA2A7F22C92CA02001DC02D /* QuantSelectFeature.swift in Sources */,
+				2EA2A7EF2C92C8D9001DC02D /* IndexManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2EBCB14C2C29016800D23F4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2EBCB14D2C29016800D23F4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		2EBCB14F2C29016800D23F4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = QuantMaster/QuantMaster.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"QuantMaster/Preview Content\"";
+				DEVELOPMENT_TEAM = 9P994F3XJ8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jeans.QuantMaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2EBCB1502C29016800D23F4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = QuantMaster/QuantMaster.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"QuantMaster/Preview Content\"";
+				DEVELOPMENT_TEAM = 9P994F3XJ8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jeans.QuantMaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EBCB13A2C29016700D23F4F /* Build configuration list for PBXProject "QuantMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EBCB14C2C29016800D23F4F /* Debug */,
+				2EBCB14D2C29016800D23F4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EBCB14E2C29016800D23F4F /* Build configuration list for PBXNativeTarget "QuantMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EBCB14F2C29016800D23F4F /* Debug */,
+				2EBCB1502C29016800D23F4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2EA2A7E52C92934B001DC02D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = exactVersion;
+				version = 1.14.0;
+			};
+		};
+		2ECC24D32C86895000BB1607 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2EA2A7E62C92934B001DC02D /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2EA2A7E52C92934B001DC02D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		2ECC24D42C86895000BB1607 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2ECC24D32C86895000BB1607 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2EBCB1372C29016700D23F4F /* Project object */;
+}
