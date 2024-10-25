@@ -15,7 +15,7 @@ open class BaseApiClient {
                                             qos: .background,
                                             attributes: .concurrent)
     
-    var urlString: String!
+    open var urlString: String { return "" }
     
     open func actionBeforeRequest(_ completion: @escaping (BaseApiClientError?) -> Void) { completion(nil) }
     
@@ -55,17 +55,17 @@ open class BaseApiClient {
         }
     }
     
-    func sendGet<T: Decodable>(with url: String, parameters: Parameters) -> AnyPublisher<T, Error> {
+    func sendGet<T: Decodable>(with url: String, parameters: Parameters? = nil) -> AnyPublisher<T, Error> {
         let convertible = self.buildConvertible(urlString: url, router: BaseRouter.get(path: nil, parmeters: parameters))
         return self.sendRequest(convertible: convertible)
     }
     
-    func sendGet<T: Decodable>(path: String, parameters: Parameters) -> AnyPublisher<T, Error> {
+    func sendGet<T: Decodable>(path: String, parameters: Parameters? = nil) -> AnyPublisher<T, Error> {
         let convertible = self.buildConvertible(BaseRouter.get(path: path, parmeters: parameters))
         return self.sendRequest(convertible: convertible)
     }
     
-    func sendGet<T: Decodable, P: Encodable>(path: String, parameters: P) -> AnyPublisher<T, Error> {
+    func sendGet<T: Decodable, P: Encodable>(path: String, parameters: P? = nil) -> AnyPublisher<T, Error> {
         let convertible = self.buildConvertible(BaseRouter.get(path: path, parmeters: parameters))
         return self.sendRequest(convertible: convertible)
     }

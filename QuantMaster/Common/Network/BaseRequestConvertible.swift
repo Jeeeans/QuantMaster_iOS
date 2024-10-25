@@ -45,7 +45,7 @@ public enum BaseRouter<P> {
 
 class BaseRequestConvertible: URLRequestConvertible {
     
-    private var baseUrl = "https://www.mustit.co.kr"
+    private var baseUrl = "https://www.quantmaster.com"
     private var headers: HTTPHeaders?
     private var urlRequest: URLRequest?
     

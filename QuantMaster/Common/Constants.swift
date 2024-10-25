@@ -8,8 +8,22 @@
 import Foundation
 
 struct Constants{
-    struct Identifier {
+    
+    
+    struct Url {
+        static var domain = ""
         
+        static var api = "https://quantmaster.com/api"
+        
+        
+    }
+    
+    
+    struct Identifier {
+        static var apiKey = ""
         static var networkQueue = "queue.network"
     }
+    
+    
+    
 }

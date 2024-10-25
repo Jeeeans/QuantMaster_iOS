@@ -1,6 +1,40 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "alert_check_conditions" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "please check your quant conditions"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "조건식을 확인해주세요."
+          }
+        }
+      }
+    },
+    "alert_ok" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirm"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "확인"
+          }
+        }
+      }
+    },
     "ascending" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -74,6 +108,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "이상"
+          }
+        }
+      }
+    },
+    "none" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "-"
           }
         }
       }

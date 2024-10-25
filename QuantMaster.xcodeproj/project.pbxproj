@@ -7,14 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E97C70F2CC61CE6004F5C81 /* QuantResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E97C70E2CC61CE6004F5C81 /* QuantResultModel.swift */; };
+		2E97C7122CC75E11004F5C81 /* CombineTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E97C7112CC75E0C004F5C81 /* CombineTest.swift */; };
+		2E97C7152CC75FDF004F5C81 /* TestDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E97C7142CC75FC3004F5C81 /* TestDatas.swift */; };
 		2EA2A7DE2C8ACBF9001DC02D /* QuantOptionPlusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2A7DD2C8ACBF9001DC02D /* QuantOptionPlusView.swift */; };
 		2EA2A7E12C8ACF6C001DC02D /* QuantConditionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2A7E02C8ACF6C001DC02D /* QuantConditionListView.swift */; };
 		2EA2A7E42C8AD54F001DC02D /* QuantResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2A7E32C8AD54F001DC02D /* QuantResultView.swift */; };
 		2EA2A7E72C92934B001DC02D /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 2EA2A7E62C92934B001DC02D /* ComposableArchitecture */; };
-		2EA2A7E92C92938F001DC02D /* ConditionListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2A7E82C92938F001DC02D /* ConditionListFeature.swift */; };
+		2EA2A7E92C92938F001DC02D /* QuantConditionListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2A7E82C92938F001DC02D /* QuantConditionListFeature.swift */; };
 		2EA2A7EC2C9294F8001DC02D /* QuantCheckFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2A7EB2C9294F8001DC02D /* QuantCheckFeature.swift */; };
 		2EA2A7EF2C92C8D9001DC02D /* IndexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2A7EE2C92C8D9001DC02D /* IndexManager.swift */; };
 		2EA2A7F22C92CA02001DC02D /* QuantSelectFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2A7F12C92CA02001DC02D /* QuantSelectFeature.swift */; };
+		2EA42D6D2C9BBCE500FAB444 /* QuantOptionPlusFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA42D6C2C9BBCE500FAB444 /* QuantOptionPlusFeature.swift */; };
+		2EA42D732C9D30E100FAB444 /* MainFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA42D722C9D30E100FAB444 /* MainFeature.swift */; };
+		2EA42D772C9FB15D00FAB444 /* QuantConditionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA42D762C9FB15D00FAB444 /* QuantConditionsModel.swift */; };
+		2EA42D7A2C9FB65C00FAB444 /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA42D792C9FB65500FAB444 /* AppFeature.swift */; };
+		2EA42D7C2C9FB69800FAB444 /* AppModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA42D7B2C9FB69400FAB444 /* AppModels.swift */; };
+		2EA42D7E2C9FB8B700FAB444 /* CommonClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA42D7D2C9FB8B100FAB444 /* CommonClient.swift */; };
+		2EA42D842CAD045C00FAB444 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA42D832CAD045C00FAB444 /* Checkbox.swift */; };
+		2EA42D862CAD057D00FAB444 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA42D852CAD057D00FAB444 /* RadioButton.swift */; };
+		2EA42D882CBDF8A800FAB444 /* QuantResultFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA42D872CBDF89D00FAB444 /* QuantResultFeature.swift */; };
+		2EA42D8A2CBE4EF900FAB444 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA42D892CBE4EF900FAB444 /* Array+Extension.swift */; };
 		2EBCB1432C29016700D23F4F /* QuantMasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCB1422C29016700D23F4F /* QuantMasterApp.swift */; };
 		2EBCB1452C29016700D23F4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCB1442C29016700D23F4F /* ContentView.swift */; };
 		2EBCB1472C29016800D23F4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EBCB1462C29016800D23F4F /* Assets.xcassets */; };
@@ -45,13 +58,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E97C70E2CC61CE6004F5C81 /* QuantResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantResultModel.swift; sourceTree = "<group>"; };
+		2E97C7112CC75E0C004F5C81 /* CombineTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineTest.swift; sourceTree = "<group>"; };
+		2E97C7142CC75FC3004F5C81 /* TestDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDatas.swift; sourceTree = "<group>"; };
 		2EA2A7DD2C8ACBF9001DC02D /* QuantOptionPlusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantOptionPlusView.swift; sourceTree = "<group>"; };
 		2EA2A7E02C8ACF6C001DC02D /* QuantConditionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantConditionListView.swift; sourceTree = "<group>"; };
 		2EA2A7E32C8AD54F001DC02D /* QuantResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantResultView.swift; sourceTree = "<group>"; };
-		2EA2A7E82C92938F001DC02D /* ConditionListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionListFeature.swift; sourceTree = "<group>"; };
+		2EA2A7E82C92938F001DC02D /* QuantConditionListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantConditionListFeature.swift; sourceTree = "<group>"; };
 		2EA2A7EB2C9294F8001DC02D /* QuantCheckFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantCheckFeature.swift; sourceTree = "<group>"; };
 		2EA2A7EE2C92C8D9001DC02D /* IndexManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexManager.swift; sourceTree = "<group>"; };
 		2EA2A7F12C92CA02001DC02D /* QuantSelectFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantSelectFeature.swift; sourceTree = "<group>"; };
+		2EA42D6C2C9BBCE500FAB444 /* QuantOptionPlusFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantOptionPlusFeature.swift; sourceTree = "<group>"; };
+		2EA42D722C9D30E100FAB444 /* MainFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeature.swift; sourceTree = "<group>"; };
+		2EA42D762C9FB15D00FAB444 /* QuantConditionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantConditionsModel.swift; sourceTree = "<group>"; };
+		2EA42D792C9FB65500FAB444 /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
+		2EA42D7B2C9FB69400FAB444 /* AppModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModels.swift; sourceTree = "<group>"; };
+		2EA42D7D2C9FB8B100FAB444 /* CommonClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonClient.swift; sourceTree = "<group>"; };
+		2EA42D832CAD045C00FAB444 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
+		2EA42D852CAD057D00FAB444 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		2EA42D872CBDF89D00FAB444 /* QuantResultFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantResultFeature.swift; sourceTree = "<group>"; };
+		2EA42D892CBE4EF900FAB444 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		2EBCB13F2C29016700D23F4F /* QuantMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuantMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EBCB1422C29016700D23F4F /* QuantMasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantMasterApp.swift; sourceTree = "<group>"; };
 		2EBCB1442C29016700D23F4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,11 +121,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E97C7102CC75DFF004F5C81 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				2E97C7132CC75FB9004F5C81 /* Datas */,
+				2E97C7112CC75E0C004F5C81 /* CombineTest.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		2E97C7132CC75FB9004F5C81 /* Datas */ = {
+			isa = PBXGroup;
+			children = (
+				2E97C7142CC75FC3004F5C81 /* TestDatas.swift */,
+			);
+			path = Datas;
+			sourceTree = "<group>";
+		};
 		2EA2A7DF2C8ACD70001DC02D /* ConditionList */ = {
 			isa = PBXGroup;
 			children = (
+				2EA42D762C9FB15D00FAB444 /* QuantConditionsModel.swift */,
 				2EA2A7E02C8ACF6C001DC02D /* QuantConditionListView.swift */,
-				2EA2A7E82C92938F001DC02D /* ConditionListFeature.swift */,
+				2EA2A7E82C92938F001DC02D /* QuantConditionListFeature.swift */,
 			);
 			path = ConditionList;
 			sourceTree = "<group>";
@@ -107,7 +151,9 @@
 		2EA2A7E22C8AD541001DC02D /* QuantResult */ = {
 			isa = PBXGroup;
 			children = (
+				2EA42D872CBDF89D00FAB444 /* QuantResultFeature.swift */,
 				2EA2A7E32C8AD54F001DC02D /* QuantResultView.swift */,
+				2E97C70E2CC61CE6004F5C81 /* QuantResultModel.swift */,
 			);
 			path = QuantResult;
 			sourceTree = "<group>";
@@ -138,6 +184,42 @@
 			path = QuantSelect;
 			sourceTree = "<group>";
 		};
+		2EA42D6B2C9BBCC500FAB444 /* QuantOptionPlus */ = {
+			isa = PBXGroup;
+			children = (
+				2EA2A7DD2C8ACBF9001DC02D /* QuantOptionPlusView.swift */,
+				2EA42D6C2C9BBCE500FAB444 /* QuantOptionPlusFeature.swift */,
+			);
+			path = QuantOptionPlus;
+			sourceTree = "<group>";
+		};
+		2EA42D782C9FB64700FAB444 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2EA42D7B2C9FB69400FAB444 /* AppModels.swift */,
+				2EA42D792C9FB65500FAB444 /* AppFeature.swift */,
+				2EBCB1422C29016700D23F4F /* QuantMasterApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2EA42D7F2C9FB8BE00FAB444 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				2EA42D7D2C9FB8B100FAB444 /* CommonClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		2EA42D822CAD044C00FAB444 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2EA42D852CAD057D00FAB444 /* RadioButton.swift */,
+				2EA42D832CAD045C00FAB444 /* Checkbox.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		2EBCB1362C29016700D23F4F = {
 			isa = PBXGroup;
 			children = (
@@ -157,12 +239,12 @@
 		2EBCB1412C29016700D23F4F /* QuantMaster */ = {
 			isa = PBXGroup;
 			children = (
+				2EA42D782C9FB64700FAB444 /* App */,
 				2ECC25142C8AAB2B00BB1607 /* Language */,
 				2ECC24F02C86DF7D00BB1607 /* Models */,
 				2EBCB1522C29018000D23F4F /* Common */,
 				2ECC25072C87F2BE00BB1607 /* Views */,
 				2EBCB1512C29017900D23F4F /* Pages */,
-				2EBCB1422C29016700D23F4F /* QuantMasterApp.swift */,
 				2EBCB1442C29016700D23F4F /* ContentView.swift */,
 				2EBCB1462C29016800D23F4F /* Assets.xcassets */,
 				2EBCB1482C29016800D23F4F /* QuantMaster.entitlements */,
@@ -192,6 +274,8 @@
 		2EBCB1522C29018000D23F4F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2E97C7102CC75DFF004F5C81 /* Test */,
+				2EA42D7F2C9FB8BE00FAB444 /* Client */,
 				2EA2A7ED2C92C8CD001DC02D /* Manager */,
 				2ECC24E92C86AD9400BB1607 /* Extension */,
 				2ECC24E62C86AD6F00BB1607 /* Log */,
@@ -227,6 +311,7 @@
 				2ECC24EA2C86ADA000BB1607 /* String+Extension.swift */,
 				2ECC24EC2C86ADBA00BB1607 /* Date+Extension.swift */,
 				2ECC250D2C89706B00BB1607 /* UIScreen+Extension.swift */,
+				2EA42D892CBE4EF900FAB444 /* Array+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -259,6 +344,7 @@
 			children = (
 				2ECC25022C86E66400BB1607 /* Main.swift */,
 				2ECC25052C87F03900BB1607 /* QuantIndexModel.swift */,
+				2EA42D722C9D30E100FAB444 /* MainFeature.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -266,9 +352,10 @@
 		2ECC25072C87F2BE00BB1607 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2EA42D822CAD044C00FAB444 /* Common */,
+				2EA42D6B2C9BBCC500FAB444 /* QuantOptionPlus */,
 				2EA2A7F02C92C9EC001DC02D /* QuantSelect */,
 				2EA2A7EA2C9294E7001DC02D /* QuantCheck */,
-				2EA2A7DD2C8ACBF9001DC02D /* QuantOptionPlusView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -320,7 +407,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
-				LastUpgradeCheck = 1530;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					2EBCB13E2C29016700D23F4F = {
 						CreatedOnToolsVersion = 15.3;
@@ -368,16 +455,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EA42D7A2C9FB65C00FAB444 /* AppFeature.swift in Sources */,
 				2ECC25192C8ABDCD00BB1607 /* QuantSelectView.swift in Sources */,
 				2ECC251A2C8ABDCD00BB1607 /* QuantCheckView.swift in Sources */,
+				2EA42D732C9D30E100FAB444 /* MainFeature.swift in Sources */,
 				2ECC24EB2C86ADA000BB1607 /* String+Extension.swift in Sources */,
 				2EA2A7E12C8ACF6C001DC02D /* QuantConditionListView.swift in Sources */,
+				2EA42D7C2C9FB69800FAB444 /* AppModels.swift in Sources */,
+				2EA42D772C9FB15D00FAB444 /* QuantConditionsModel.swift in Sources */,
 				2ECC24E52C86984D00BB1607 /* BaseAuthenticator.swift in Sources */,
 				2EA2A7EC2C9294F8001DC02D /* QuantCheckFeature.swift in Sources */,
 				2ECC24EF2C86B0BF00BB1607 /* BaseRequestConvertible.swift in Sources */,
+				2EA42D882CBDF8A800FAB444 /* QuantResultFeature.swift in Sources */,
 				2EA2A7DE2C8ACBF9001DC02D /* QuantOptionPlusView.swift in Sources */,
 				2ECC24E82C86AD7A00BB1607 /* Log.swift in Sources */,
 				2ECC24FB2C86E34700BB1607 /* MarketType.swift in Sources */,
+				2E97C7122CC75E11004F5C81 /* CombineTest.swift in Sources */,
 				2EA2A7E42C8AD54F001DC02D /* QuantResultView.swift in Sources */,
 				2ECC24F72C86E0EF00BB1607 /* OrderType.swift in Sources */,
 				2ECC24E32C86948100BB1607 /* Constants.swift in Sources */,
@@ -385,17 +478,24 @@
 				2ECC24E12C86938300BB1607 /* BaseNetwork+Error.swift in Sources */,
 				2ECC24DF2C8691AB00BB1607 /* BaseNetwork.swift in Sources */,
 				2ECC24FF2C86E3C600BB1607 /* ValueType.swift in Sources */,
+				2E97C7152CC75FDF004F5C81 /* TestDatas.swift in Sources */,
 				2ECC25012C86E3F300BB1607 /* CompareType.swift in Sources */,
 				2ECC25032C86E66400BB1607 /* Main.swift in Sources */,
 				2EBCB1452C29016700D23F4F /* ContentView.swift in Sources */,
 				2EBCB1432C29016700D23F4F /* QuantMasterApp.swift in Sources */,
-				2EA2A7E92C92938F001DC02D /* ConditionListFeature.swift in Sources */,
+				2EA2A7E92C92938F001DC02D /* QuantConditionListFeature.swift in Sources */,
+				2EA42D862CAD057D00FAB444 /* RadioButton.swift in Sources */,
+				2E97C70F2CC61CE6004F5C81 /* QuantResultModel.swift in Sources */,
 				2ECC24ED2C86ADBA00BB1607 /* Date+Extension.swift in Sources */,
 				2ECC24FD2C86E39200BB1607 /* SectorType.swift in Sources */,
 				2ECC24F22C86DFBC00BB1607 /* QuantRequest.swift in Sources */,
+				2EA42D8A2CBE4EF900FAB444 /* Array+Extension.swift in Sources */,
+				2EA42D6D2C9BBCE500FAB444 /* QuantOptionPlusFeature.swift in Sources */,
 				2ECC250E2C89706B00BB1607 /* UIScreen+Extension.swift in Sources */,
 				2ECC25062C87F03900BB1607 /* QuantIndexModel.swift in Sources */,
 				2ECC24F92C86E1DB00BB1607 /* ReportType.swift in Sources */,
+				2EA42D7E2C9FB8B700FAB444 /* CommonClient.swift in Sources */,
+				2EA42D842CAD045C00FAB444 /* Checkbox.swift in Sources */,
 				2EA2A7F22C92CA02001DC02D /* QuantSelectFeature.swift in Sources */,
 				2EA2A7EF2C92C8D9001DC02D /* IndexManager.swift in Sources */,
 			);
@@ -409,6 +509,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -438,6 +539,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -470,6 +572,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -499,6 +602,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -526,6 +630,7 @@
 				CODE_SIGN_ENTITLEMENTS = QuantMaster/QuantMaster.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"QuantMaster/Preview Content\"";
 				DEVELOPMENT_TEAM = 9P994F3XJ8;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -564,6 +669,7 @@
 				CODE_SIGN_ENTITLEMENTS = QuantMaster/QuantMaster.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"QuantMaster/Preview Content\"";
 				DEVELOPMENT_TEAM = 9P994F3XJ8;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -623,7 +729,7 @@
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
 			requirement = {
 				kind = exactVersion;
-				version = 1.14.0;
+				version = 1.15.0;
 			};
 		};
 		2ECC24D32C86895000BB1607 /* XCRemoteSwiftPackageReference "Alamofire" */ = {

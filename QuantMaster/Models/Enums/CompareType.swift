@@ -8,6 +8,7 @@
 import Foundation
 
 enum CompareType: String, Encodable, CaseIterable, Identifiable {
+    case NONE = "none"
     case MORE = "more"
     case OVER = "over"
     case LESS = "less"
@@ -18,6 +19,7 @@ enum CompareType: String, Encodable, CaseIterable, Identifiable {
     var id: String { return self.rawValue }
     var description: String {
         switch self {
+        case .NONE: return "none".localized
         case .MORE: return "more".localized
         case .OVER: return "over".localized
         case .LESS: return "less".localized

@@ -7,34 +7,48 @@
 
 import Foundation
 import ComposableArchitecture
-import ComposableArchitectureMacros
+import SwiftUI
 
 @Reducer
-struct QuantSelectFeature: ReducerProtocol {
+struct QuantSelectFeature {
+    
     @ObservableState
-    struct State: Equatable {
-        var data: QuantOption
-        var selectedOption: QuantOptionItem? = nil
+    struct State {
+        var id: UUID = UUID()
+        var data: [QuantSelectConditionModel] = []
+        var selectedOption: QuantSelectConditionModel
         var lowerValue: String = ""
-        var lowerOption: CompareType? = nil
+        var lowerOption: CompareType = .NONE
         var higherValue: String = ""
-        var higherOption: CompareType? = nil
-        var orderOption: OrderType? = nil
-    }
-    enum Action {
-        case selectOption(QuantOptionItem)
-        case deleteButtonTapped
+        var higherOption: CompareType = .NONE
+        var orderOption: OrderType = .ASC
         
-        case setLowerValue
+        init(data: [QuantSelectConditionModel]) {
+            self.data = data
+            self.selectedOption = data.first ?? QuantSelectConditionModel(title: "", type: "")
+        }
     }
     
-    var body: some ReducerOf<Self> {
-        Reduce<State, Action> { state, action in
+    enum Action {
+        case change
+        case deleteButtonTapped
+        case delegate(Delegate)
+        
+        enum Delegate: Equatable {
+            case delete(UUID)
+            case change(QuantSelectConditionModel)
+        }
+    }
+    
+    var body: some Reducer<State, Action> {
+        Reduce { state, action in
             switch action {
-            case .selectOption(let item):
-                state.selectedOption = item
-                return .none
+            case .change:
+                return .send(.delegate(.change(state.selectedOption)))
             case .deleteButtonTapped:
+                return .send(.delegate(.delete(state.id)))
+            case .delegate(let delegate):
+                
                 return .none
             }
         }

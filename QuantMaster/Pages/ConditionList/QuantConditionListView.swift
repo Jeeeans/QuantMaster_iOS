@@ -6,17 +6,47 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct QuantConditionListView: View {
+    @Bindable var store: StoreOf<QuantConditionListFeature>
+    
     var body: some View {
-        LazyVStack(content: {
-            ForEach(1...10, id: \.self) { count in
-                /*@START_MENU_TOKEN@*/Text("Placeholder \(count)")/*@END_MENU_TOKEN@*/
+        ScrollView {
+            LazyVStack(content: {
+                ForEach(0..<store.checkItems.count, id: \.self) { index in
+                    QuantCheckView(
+                        store: .init(initialState: store.checkItems[index],
+                                     reducer: { QuantCheckFeature() }))
+                }
+                
+                ForEach(0..<store.selectItems.count, id: \.self) { index in
+                    QuantSelectView(
+                        store: .init(initialState: store.selectItems[index],
+                                     reducer: { QuantSelectFeature() }))
+                }
+                
+            })
+            .toolbar {
+                ToolbarItem {
+                    Button {
+                        self.store.send(.addSelectItemTapped)
+                    } label: {
+                        Image(systemName: "plus.rectangle")
+                    }
+                }
             }
-        })
+        }
     }
 }
 
 #Preview {
-    QuantConditionListView()
+    QuantConditionListView(
+        store: .init(initialState: QuantConditionListFeature.State(
+            data: QuantConditionsModel(selectList: TestData.selectConditionModel,
+                                       checkList: TestData.checkConditionModel)
+        ),
+                     reducer: { QuantConditionListFeature() }
+                    )
+    )
 }

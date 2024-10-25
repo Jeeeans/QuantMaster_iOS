@@ -11,13 +11,19 @@ import ComposableArchitecture
 @Reducer
 struct QuantCheckFeature {
     @ObservableState
-    struct State: Equatable {
-        var data: QuantOption
-        var selectedList: IdentifiedArrayOf<QuantOptionItem>
+    struct State {
+        var data: QuantCheckConditionModel
+        var selectedList: [QuantCheckConditionItemModel] = []
+        
+        init(data: QuantCheckConditionModel) {
+            self.data = data
+            self.selectedList = data.items
+        }
     }
+    
     enum Action {
-        case addOption(QuantOptionItem)
-        case removeOption(QuantOptionItem)
+        case addOption(QuantCheckConditionItemModel)
+        case removeOption(QuantCheckConditionItemModel)
     }
     
     var body: some Reducer<State, Action> {
@@ -27,7 +33,7 @@ struct QuantCheckFeature {
                 state.selectedList.append(item)
                 return .none
             case .removeOption(let item):
-                if let index = state.selectedList.firstIndex(where: { item.id == $0.id }) {
+                if let index = state.selectedList.firstIndex(where: { item.type == $0.type }) {
                     state.selectedList.remove(at: index)
                 }
                 return .none
